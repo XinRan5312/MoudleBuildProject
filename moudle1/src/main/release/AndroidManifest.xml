@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.xinran.moudle1"
+>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".Moudle1MainActvity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="app"/>
+                <data android:host="moudle"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

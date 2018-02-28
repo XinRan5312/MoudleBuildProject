@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/xinran/danke/mygithub/MoudleBuildProject/moudle1/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="61211bf2b89aaaa939b8c466e7da585cc7e5574b">
+        <dex dex="/Users/xinran/danke/mygithub/MoudleBuildProject/app/build/intermediates/pre-dexed/debug/classes_293480afce5dfc15aeae73ff1c0d9ad696d8db2c.jar" />
+    </item>
+
+</items>

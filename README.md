@@ -1,2 +1,5 @@
 # MoudleBuildProject
 组件化构建工程实践
+moudle完全解耦后 各自独立开发 只有真正打综合包的时候才作为libray使用
+ 
+ 通过在gradle.properties配置IsMoudleBuild true 或者false就可以使moudle1成为独立的App或者是作为liabry

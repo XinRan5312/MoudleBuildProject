@@ -1,4 +1,4 @@
-println IsMoudleBuild.toBoolean()
+//println IsMoudleBuild.toBoolean()
 if (IsMoudleBuild.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {

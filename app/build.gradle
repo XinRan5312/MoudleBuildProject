@@ -10,6 +10,11 @@ android {
         versionCode rootProject.versionCode
         versionName rootProject.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+//这会使被使用的library module同时编译debug版本
+        defaultPublishConfig 'release'
+        publishNonDefault true
+
     }
     buildTypes {
         release {
@@ -32,8 +37,10 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 
-    println IsMoudleBuild.toBoolean()
+   // println IsMoudleBuild.toBoolean()
     if (!IsMoudleBuild.toBoolean()) {
-        compile project(':moudle1')
+        //与上面的设置 defaultPublishConfig 'release'配合使用这样比直接用compile project(':moudle1') 会提升打包速度
+        debugCompile project(':moudle1', configuration: "debug")
+        releaseCompile project(':moudle1', configuration: "release")
     }
 }
